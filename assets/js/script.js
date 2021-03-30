@@ -1,21 +1,17 @@
-// Retorne no console todas as imagens do site
-// const imgs = document.querySelectorAll('img');
-// console.log(imgs)
+const tabMenu = document.querySelectorAll('.js-tabmenu li');
+const tabContent = document.querySelectorAll('.js-tabcontent section');
 
-// Retorne no console apenas as imagens que começaram com a palavra imagem
-// const imgAnimais = document.querySelectorAll('[src^="assets/img/imagem"]');
-// console.log(imgAnimais)
+if(tabMenu.length && tabContent.length) {
+    tabContent[0].classList.add('ativo');
 
-// Selecione todos os links internos (onde o href começa com #)
-// const linksInternos = document.querySelectorAll('[href^="#"]');
-// console.log(linksInternos);
+    function classAtivo(index){
+        tabContent.forEach(item => item.classList.remove('ativo'))
+        tabContent[index].classList.add('ativo');
+    }
 
-// Selecione o primeiro h2 dentro de .animais-descricao
-// const primeiroH2 = document.querySelector('.animais-descricao h2');
-// console.log(primeiroH2);
+    tabMenu.forEach( (li, position) => {
+        li.addEventListener('click', () => classAtivo(position))
+    })
+}
 
-// // Selecione o último p do site
-// const p = document.querySelectorAll('p');
-// const ultimoP = p[--p.length]; //Macetinho ou [p.length - 1]
-// console.log(ultimoP)
 
