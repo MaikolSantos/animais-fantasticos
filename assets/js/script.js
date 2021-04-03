@@ -51,3 +51,21 @@ function initScrollSuave() {
         linksInternos.forEach( link => link.addEventListener('click', scrollToSection));
     }
 } initScrollSuave();
+
+function initAnimationScroll(){
+    const sections = document.querySelectorAll('.js-scroll'); 
+    if(sections.length) {
+        function animationScroll() {
+            const windowMetade = window.innerHeight * 0.6;
+
+            sections.forEach( section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionShow = (sectionTop - windowMetade) < 0;
+                if(sectionShow) return section.classList.add('ativo');
+                section.classList.remove('ativo');
+            })
+        }
+        window.addEventListener('scroll', animationScroll);
+    }
+    animationScroll() 
+} initAnimationScroll();
