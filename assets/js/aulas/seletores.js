@@ -1,21 +1,21 @@
 // Retorne no console todas as imagens do site
-// const imgs = document.querySelectorAll('img');
-// console.log(imgs)
+const imgs = document.querySelectorAll('img');
+console.log(imgs)
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
-// const imgAnimais = document.querySelectorAll('[src^="assets/img/imagem"]');
-// console.log(imgAnimais)
+const imgAnimais = document.querySelectorAll('[src^="assets/img/imagem"]');
+console.log(imgAnimais)
 
 // Selecione todos os links internos (onde o href começa com #)
-// const linksInternos = document.querySelectorAll('[href^="#"]');
-// console.log(linksInternos);
+const linksInternos = document.querySelectorAll('[href^="#"]');
+console.log(linksInternos);
 
 // Selecione o primeiro h2 dentro de .animais-descricao
-// const primeiroH2 = document.querySelector('.animais-descricao h2');
-// console.log(primeiroH2);
+const primeiroH2 = document.querySelector('.animais-descricao h2');
+console.log(primeiroH2);
 
 // // Selecione o último p do site
-// const p = document.querySelectorAll('p');
-// const ultimoP = p[--p.length]; //Macetinho ou [p.length - 1]
-// console.log(ultimoP)
+const p = document.querySelectorAll('p');
+const ultimoP = p[--p.length]; //Macetinho ou [p.length - 1]
+console.log(ultimoP)
 
