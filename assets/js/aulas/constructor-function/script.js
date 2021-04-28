@@ -30,5 +30,3 @@
 // const criaH1 = newElement.bind(null, 'h1', 'titulo')
 
 // console.log(criaH1('Novo Titulo'))
-
-console.log(237 % 11)
