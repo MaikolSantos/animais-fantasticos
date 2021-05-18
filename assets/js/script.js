@@ -13,3 +13,4 @@ initAnimationScroll();
 initModal();
 initTooltip();
 initDropdownMenu();
+
